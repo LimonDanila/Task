@@ -20,7 +20,7 @@ public class RadixSort {
             for (Integer i: list) {
                 tmp = i / divider;
                 temp[tmp % 10].add(i);
-                if (flag && tmp > 0) {
+                if (tmp > 0) {
                     flag = false;
                 }
             }
